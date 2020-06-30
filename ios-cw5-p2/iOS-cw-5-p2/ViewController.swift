@@ -26,12 +26,14 @@ class ViewController: UIViewController {
     var counter = 0
     
     override func viewDidLoad() {
-        buttons = [b1, b2, b3, b4, b5, b6, b7, b8, b9]}
+        buttons = [b1, b2, b3, b4, b5, b6, b7, b8, b9]
+    }
+    
     @IBAction func press(_ sender: UIButton) {
         
         
         if counter % 2 == 0{
-            sender.setTitle("x", for:.normal)
+            sender.setTitle("X", for:.normal)
             sender.setTitleColor(.white, for: .normal)
             turnLable.text = "O Turn"
         }
